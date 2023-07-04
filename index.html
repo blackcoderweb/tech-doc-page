@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/d28a47b946.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header><i class="fa-brands fa-react fa-spin fa-lg"></i></span> Documentación de React</header>
+        <ul>
+            <li><a href="#Qué_es_React" class="nav-link">Qué es React</a></li>
+            <li><a href="#Tu_primer_componente" class="nav-link">Tu primer componente</a></li>
+            <li><a href="#Importar_y_exportar_componentes" class="nav-link">Importar y exportar componentes</a></li>
+            <li><a href="#Escribir_marcado_con_JSX" class="nav-link">Escribir marcado con JSX</a></li>
+            <li><a href="#JavaScript_en_JSX_con_llaves" class="nav-link">JavaScript en JSX con llaves</a></li>
+            <li><a href="#Pasar_props_a_un_componente" class="nav-link">Pasar props a un componente</a></li>
+            <li><a href="#Renderizado_condicional" class="nav-link">Renderizado condicional</a></li>
+            <li><a href="#Renderizado_de_listas" class="nav-link">Renderizado de listas</a></li>
+            <li><a href="#Mantener_los_componentes_puros" class="nav-link">Mantener los componentes puros</a></li>
+            <li><a href="#Responder_a_eventos" class="nav-link">Responder a eventos</a></li>
+            <li><a href="#El_estado" class="nav-link">El estado</a></li>
+            <li><a href="#Renderizado_y_confirmación" class="nav-link">Renderizado y confirmación</a></li>
+            <li><a href="#El_estado_como_una_instantánea" class="nav-link">El estado como una instantánea</a></li>
+            <li><a href="#Poner_en_cola_una_serie_de_actualizaciones_del_estado" class="nav-link">Poner en cola una
+                    serie de actualizaciones del estado</a></li>
+            <li><a href="#Actualizar_objetos_en_el_estado" class="nav-link">Actualizar objetos en el estado</a></li>
+            <li><a href="#Actualizar_arrays_en_el_estado" class="nav-link">Actualizar arrays en el estado</a></li>
+            <li><a href="#Reaccionar_a_las_entradas_con_el_estado" class="nav-link">Reaccionar a las entradas con el
+                    estado</a></li>
+            <li><a href="#Elección_de_la_estructura_del_estado" class="nav-link">Elección de la estructura del
+                    estado</a></li>
+            <li><a href="#Compartir_estado_entre_componentes" class="nav-link">Compartir estado entre componentes</a>
+            </li>
+            <li><a href="#Conservar_y_reiniciar_el_estado" class="nav-link">Conservar y reiniciar el estado</a></li>
+            <li><a href="#Extraer_lógica_de_estado_en_un_reducer" class="nav-link">Extraer lógica de estado en un
+                    reducer</a></li>
+            <li><a href="#Pasar_datos_en_profundidad_con_contexto" class="nav-link">Pasar datos en profundidad con
+                    contexto</a></li>
+            <li><a href="#Escalar_con_reducer_y_contexto" class="nav-link">Escalar con reducer y contexto</a></li>
+            <li><a href="#Referenciar_valores_con_refs" class="nav-link">Referenciar valores con refs</a></li>
+            <li><a href="#Manipular_el_DOM_con_refs" class="nav-link">Manipular el DOM con refs</a></li>
+            <li><a href="#Sincronizar_con_efectos" class="nav-link">Sincronizar con efectos</a></li>
+            <li><a href="#Puede_que_no_necesites_un_efecto" class="nav-link">Puede que no necesites un efecto</a></li>
+            <li><a href="#Ciclo_de_vida_de_los_efectos_reactivos" class="nav-link">Ciclo de vida de los efectos
+                    reactivos</a></li>
+            <li><a href="#Separar_eventos_de_los_efectos" class="nav-link">Separar eventos de los efectos</a></li>
+
+            <li><a href="#Eliminar_dependencias_de_los_efectos" class="nav-link">Eliminar dependencias de los
+                    efectos</a></li>
+            <li><a href="#Reutilización_de_lógica_con_hooks_personalizados" class="nav-link">Reutilización de lógica con
+                    hooks personalizados</a></li>
+            <li><a href="#Referencia" class="nav-link">Referencia</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Qué_es_React">
+            <header>Qué es React</header>
+            <article>
+                <p>React es una biblioteca de JavaScript para renderizar interfaces de usuario (UI por sus siglas en
+                    inglés). La UI se construye a partir de pequeñas unidades como botones, texto e imágenes. React te
+                    permite combinarlas en componentes reutilizables y anidables. Desde sitios web hasta aplicaciones de
+                    teléfonos, todo en la pantalla se puede descomponer en componentes. En este capítulo aprenderás a
+                    crear, adaptar y mostrar de forma condicional componentes de React.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Tu_primer_componente">
+            <header>Tu primer componente</header>
+            <article>
+                <p>Los <i>componentes</i> son uno de los conceptos esenciales de React. Constituyen los cimientos sobre
+                    los que construyes interfaces de usuario (UIs por sus siglas en inglés). ¡Y eso los convierte en el
+                    lugar perfecto para comenzar tu recorrido por React!</p>
+                <p>Aprenderás:</p>
+                <ul>
+                    <li>Qué es un componente</li>
+                    <li>Qué papel desempeñan los componentes en una aplicación de React</li>
+                    <li>Cómo escribir tu primer componente de React</li>
+                </ul>
+                <p>Componentes: Elementos básicos para construir UIs</p>
+                <p>En la Web, HTML nos permite crear documentos estructurados con su conjunto integrado de etiquetas
+                    como &lt;h1&gt; y &lt;li&gt:</p>
+                <code>
+                        <img src="images/code1.png" alt="">
+                    </code>
+                <p>Este marcado representa un artículo &lt;article&gt, su encabezado &lt;h1&gt;, y una tabla de
+                    contenidos (abreviada) representada como una lista ordenada &lt;ol&gt;. Un marcado como este,
+                    combinado con CSS para los estilos y JavaScript para la interactividad, están detrás de cada barra
+                    lateral, avatar, modal, menú desplegable y cualquier otra pieza de UI que ves en la web.</p>
+
+                <p>React te permite combinar tu marcado, CSS y JavaScript en «componentes» personalizados, elementos
+                    reutilizables de UI para tu aplicación. El código de la tabla de contenidos que viste arriba pudo
+                    haberse transformado en un componente &lt;TableOfContents /&gt; que podrías renderizar en cada
+                    página. Por detrás, seguiría utilizando las mismas etiquetas HTML como &lt;article&gt;, &lt;h1&gt;,
+                    etc.</p>
+
+                <p>De la misma forma que con las etiquetas HTML, puedes componer, ordenar y anidar componentes para
+                    diseñar páginas completas. Por ejemplo la página de documentación que estás leyendo está hecha de
+                    componentes de React:</p>
+                <code>
+                        <img src="images/code2.png" alt="">
+                    </code>
+                <p>En la medida en que tu proyecto crece, notarás que muchos de tus diseños se pueden componer mediante
+                    la reutilización de componentes que ya escribiste, acelerando el desarrollo. ¡Nuestra tabla de
+                    contenido de arriba podría añadirse a cualquier pantalla con &lt;TableOfContents /&gt;! Incluso
+                    puedes montar tu proyecto con los miles de componentes compartidos por la comunidad de código
+                    abierto de React como Chakra UI y Material UI.</p>
+
+                <p>Definir un componente</p>
+                <p>Tradicionalmente, cuando se creaban páginas web, los desarrolladores web usaban lenguaje de marcado
+                    para describir el contenido y luego añadían interacciones agregando un poco de JavaScript. Esto
+                    funcionaba perfectamente cuando las interacciones eran algo deseable, pero no imprescindible en la
+                    web. Ahora es algo que se espera de muchos sitios y de todas las aplicaciones. React pone la
+                    interactividad primero usando aún la misma tecnología: un componente de React es una función de
+                    JavaScript a la que puedes agregar markup. Aquí vemos cómo luce esto:</p>
+                <code>
+                        <img src="images/code3.png" alt="">
+                    </code>
+                <p>Y aquí veremos cómo construir un componente:</p>
+                <p>Paso 1: Exporta el componente </p>
+                <p>El prefijo export default es parte de la sintaxis estándar de Javascript (no es específico de React).
+                    Te permite marcar la función principal en un archivo para que luego puedas importarlas en otros
+                    archivos. (¡Más sobre importar en Importar y exportar componentes!).</p>
+                <p>Paso 2: Define la función </p>
+                <p>Con function Profile() { } defines una función con el nombre Profile.</p>
+                <p class="alert">Atención</p>
+                <p class="alert">¡Los componentes de React son funciones regulares de JavaScript, pero sus nombres deben
+                    comenzar con letra mayúscula o no funcionarán!</p>
+                <p>Paso 3: Añade marcado</p>
+                <p>El componente retorna una etiqueta &lt;img /&gt; con atributos src y alt. &lt;img /&gt; se escribe
+                    como en HTML, ¡pero en realidad es JavaScript por detrás! Esta sintaxis se llama JSX, y te permite
+                    incorporar marcado dentro de JavaScript.</p>
+                <p>Las sentencias return se pueden escribir todo en una línea, como en este componente:</p>
+                <code>
+                        <img src="images/code4.png" alt="">
+                    </code>
+                <p>Pero si tu marcado no está todo en la misma línea que la palabra clave return, debes ponerlo dentro
+                    de paréntesis como en este ejemplo:</p>
+                <code>
+                        <img src="images/code5.png" alt="">
+                    </code>
+                <p class="alert">Atención</p>
+                <p class="alert">¡Sin paréntesis, todo el código que está en las líneas posteriores al return serán
+                    ignoradas!</p>
+                <p>Usar un componente</p>
+                <p>Ahora que has definido tu componente Profile, puedes anidarlo dentro de otros componentes. Por
+                    ejemplo, puedes exportar un componente Gallery que utilice múltiples componentes Profile:</p>
+                <code>
+                        <img src="images/code6.png" alt="">
+                    </code>
+                <p>Lo que ve el navegador</p>
+                <p>Nota la diferencia de mayúsculas y minúsculas:</p>
+                <ul>
+                    <li>&lt;section&gt; está en minúsculas, por lo que React sabe que nos referimos a una etiqueta HTML.
+                    </li>
+                    <li>&lt;Profile /&gt; comienza con una P mayúscula, por lo que React sabe que queremos usar nuestro
+                        componente llamado Profile.</li>
+                </ul>
+                <p>Y Profile contiene aún más HTML: &lt;img /&gt;. Al final lo que el navegador ve es esto:</p>
+                <code>
+                        <img src="images/code7.png" alt="">
+                    </code>
+                <p>Anidar y organizar componentes</p>
+                <p>Los componentes son funciones regulares de JavaScript, por lo que puedes tener múltiples componentes
+                    en el mismo archivo. Esto es conveniente cuando los componentes son relativamente pequeños o están
+                    estrechamente relacionados entre sí. Si este archivo se torna abarrotado, siempre puedes mover
+                    Profile a un archivo separado. Aprenderás como hacer esto pronto en la página sobre imports.</p>
+                <p>Dado que los componentes Profile se renderizan dentro de Gallery —¡incluso varias veces!— podemos
+                    decir que Gallery es un componente padre, que renderiza cada Profile como un «hijo». Este es la
+                    parte mágica de React: puedes definir un componente una vez, y luego usarlo en muchos lugares y
+                    tantas veces como quieras.</p>
+                <p class="alert">Atención</p>
+                <p class="alert">Los componentes pueden renderizar otros componentes, pero nunca debes anidar sus
+                    definiciones:</p>
+                <code>
+                        <img src="images/code8.png" alt="">
+                    </code>
+                <p class="alert">El fragmento de código de arriba es muy lento y causa errores. En su lugar, define cada
+                    componente en el primer nivel:</p>
+                <code>
+                        <img src="images/code9.png" alt="">
+                    </code>
+                <p class="alert">Cuando un componente hijo necesita datos de su padre, pásalo por props en lugar de
+                    anidar las definiciones.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Importar_y_exportar_componentes">
+            <header>Importar y exportar componentes</header>
+        </section>
+        <section class="main-section" id="Escribir_marcado_con_JSX">
+            <header>Escribir marcado con JSX</header>
+        </section>
+        <section class="main-section" id="JavaScript_en_JSX_con_llaves">
+            <header>JavaScript en JSX con llaves</header>
+        </section>
+        <section class="main-section" id="Pasar_props_a_un_componente">
+            <header>Pasar props a un componente</header>
+        </section>
+        <section class="main-section" id="Renderizado_condicional">
+            <header>Renderizado condicional</header>
+        </section>
+        <section class="main-section" id="Renderizado_de_listas">
+            <header>Renderizado de listas</header>
+        </section>
+        <section class="main-section" id="Mantener_los_componentes_puros">
+            <header>Mantener los componentes puros</header>
+        </section>
+        <section class="main-section" id="Responder_a_eventos">
+            <header>Responder a eventos</header>
+        </section>
+        <section class="main-section" id="El_estado">
+            <header>El estado</header>
+        </section>
+        <section class="main-section" id="Renderizado_y_confirmación">
+            <header>Renderizado y confirmación</header>
+        </section>
+        <section class="main-section" id="El_estado_como_una_instantánea">
+            <header>El estado como una instantánea</header>
+        </section>
+        <section class="main-section" id="Poner_en_cola_una_serie_de_actualizaciones_del_estado">
+            <header>Poner en cola una serie de actualizaciones del estado</header>
+        </section>
+        <section class="main-section" id="Actualizar_objetos_en_el_estado">
+            <header>Actualizar objetos en el estado</header>
+        </section>
+        <section class="main-section" id="Actualizar_arrays_en_el_estado">
+            <header>Actualizar arrays en el estado</header>
+        </section>
+        <section class="main-section" id="Reaccionar_a_las_entradas_con_el_estado">
+            <header>Reaccionar a las entradas con el estado</header>
+        </section>
+        <section class="main-section" id="Elección_de_la_estructura_del_estado">
+            <header>Elección de la estructura del estado</header>
+        </section>
+        <section class="main-section" id="Compartir_estado_entre_componentes">
+            <header>
+                Compartir estado entre componentes
+            </header>
+        </section>
+        <section class="main-section" id="Conservar_y_reiniciar_el_estado">
+            <header>Conservar y reiniciar el estado</header>
+
+        </section>
+        <section class="main-section" id="Extraer_lógica_de_estado_en_un_reducer">
+            <header>Extraer lógica de estado en un reducer</header>
+        </section>
+        <section class="main-section" id="Pasar_datos_en_profundidad_con_contexto">
+            <header>Pasar datos en profundidad con contexto</header>
+        </section>
+        <section class="main-section" id="Escalar_con_reducer_y_contexto">
+            <header>Escalar con reducer y contexto</header>
+        </section>
+        <section class="main-section" id="Referenciar_valores_con_refs">
+            <header>Referenciar valores con refs</header>
+        </section>
+        <section class="main-section" id="Manipular_el_DOM_con_refs">
+            <header>Manipular el DOM con refs</header>
+        </section>
+        <section class="main-section" id="Sincronizar_con_efectos">
+            <header>Sincronizar con efectos</header>
+        </section>
+        <section class="main-section" id="Puede_que_no_necesites_un_efecto">
+            <header>
+                Puede que no necesites un efecto
+            </header>
+        </section>
+        <section class="main-section" id="Ciclo_de_vida_de_los_efectos_reactivos">
+            <header>Ciclo de vida de los efectos reactivos</header>
+        </section>
+        <section class="main-section" id="Separar_eventos_de_los_efectos">
+            <header>Separar eventos de los efectos</header>
+        </section>
+        <section class="main-section" id="Eliminar_dependencias_de_los_efectos">
+            <header>Eliminar dependencias de los efectos</header>
+        </section>
+        <section class="main-section" id="Reutilización_de_lógica_con_hooks_personalizados">
+            <header>Reutilización de lógica con hooks personalizados</header>
+        </section>
+        <section class="main-section" id="Referencia">
+            <header>Referencia</header>
+        </section>
+    </main>
+
+    </div>
+</body>
+
+</html>
